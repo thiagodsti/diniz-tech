@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <title>Thiago Diniz da Silveira</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="js/typed.js"></script>
+</head>
+<body>
+    <h1 style = "text-align: center;">Thiago Diniz da Silveira</h1>
+    <div class = "terminal">
+    	<div class = "text-title">
+            <span class = "title-bar">teda - bash</span>
+    	</div>
+    	<div class = "text-body">
+	    	$ ls socials
+				<br />
+				<div class = "sns">
+					<ul class = "icons">
+							<li class = "icon"><img class = "linkedin" src = "https://s3.amazonaws.com/diniz.tech/images/linkedinicon.png"></li>
+					    <li class = "icon"><img class = "fb" src = "https://s3.amazonaws.com/diniz.tech/images/fbicon.png"></li>
+					    <li class = "icon"><img class = "github" src = "https://s3.amazonaws.com/diniz.tech/images/giticon.png"></li>
+					</ul>
+		    </div>
+		    $ ls works
+				<br />
+		    <div class = "works">
+					<ul class = "icons">
+					    <li class = "icon"><img class = "geomais" src = "https://s3.amazonaws.com/diniz.tech/images/geomaisicon.jpg"></li>
+					    <li class = "icon"><img class = "sajadv" src = "https://s3.amazonaws.com/diniz.tech/images/sajadvicon.png"></li>
+					</ul>
+		    </div>
+		    $ ./aboutMe.sh
+				<br />
+				$ <div class = "element"></div><br>
+				<span class = "prefix">$</span>
+				<span class = "next"><span>
+    	</div>
+    </div>
+</body>
+</html>
+
+<script>
+$(function(){
+	$('li.icon img').hover(function(){
+    	    $(this).fadeTo('fast',.3);
+	},function(){
+    	    $(this).fadeTo('fast',1);
+	});
+
+	$(".fb").on('click',function(){
+ 	    window.open('https://www.facebook.com/tdsteda', '_blank');
+	});
+
+	$(".github").on('click',function(){
+ 	    window.open('https://github.com/thiagodsti', '_blank');
+	});
+
+	$(".linkedin").on('click',function(){
+ 	    window.open('https://br.linkedin.com/in/thiagodsti', '_blank');
+	});
+
+	$(".geomais").on('click',function(){
+ 	    window.open('http://www.geomais.com.br', '_blank');
+	});
+
+	$(".sajadv").on('click',function(){
+ 	    window.open('http://www.sajadv.com.br', '_blank');
+	});
+
+  var anosExperiencia = new Date().getFullYear() - 2010;
+
+  $(".element").typed({
+	    strings: ["Hi!", "My name is Thiago Diniz da Silveira."],
+      typeSpeed: 0,
+      callback: function() {
+        $(".prefix").css('display', 'inline');
+        $(".typed-cursor").css('display', 'none');
+        $(".next").typed({
+          startDelay:2000,
+          strings: [
+						"I'm developer with " + anosExperiencia + " years of experience.",
+						"I'm working at UpPoints as a Developer.",
+						"I Like to solve hard logic problems,",
+						"If you have a logic problem please do not hesitate to send me it.",
+						"Keep looking. Don't settle."],
+          typeSpeed: 0,
+					loop: true
+        });
+      }
+    });
+  });
+</script>
