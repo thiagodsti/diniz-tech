@@ -47,6 +47,12 @@ li.iconProjects > img {
     border-radius: 10px;
 }
 
+img:hover {
+    opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+    cursor: pointer;
+}
+
 div.terminal {
     display: block;
     margin-left: auto;
