@@ -28,8 +28,9 @@
 				<br />
 		    <div class = "works">
 					<ul class = "icons">
-					    <li class = "icon"><img class = "geomais" src = "https://s3.amazonaws.com/diniz.tech/images/geomaisicon.jpg"></li>
-					    <li class = "icon"><img class = "sajadv" src = "https://s3.amazonaws.com/diniz.tech/images/sajadvicon.png"></li>
+							<li class = "iconProjects"><img class = "uppoints" src = "https://s3.amazonaws.com/diniz.tech/images/uppointsicon.png"></li>
+							<li class = "iconProjects"><img class = "sajadv" src = "https://s3.amazonaws.com/diniz.tech/images/sajadvicon.png"></li>
+					    <li class = "iconProjects"><img class = "geomais" src = "https://s3.amazonaws.com/diniz.tech/images/geomaisicon.jpg"></li>
 					</ul>
 		    </div>
 		    $ ./aboutMe.sh
@@ -70,6 +71,10 @@ $(function(){
  	    window.open('http://www.sajadv.com.br', '_blank');
 	});
 
+	$(".uppoints").on('click', function() {
+			window.open('http://uppoints.com/', '_blank');
+	});
+
   var anosExperiencia = new Date().getFullYear() - 2010;
 
   $(".element").typed({
@@ -82,9 +87,9 @@ $(function(){
           startDelay:2000,
           strings: [
 						"I'm developer with " + anosExperiencia + " years of experience.",
-						"I'm working at UpPoints as a Developer.",
-						"I Like to solve hard logic problems,",
-						"If you have a logic problem please do not hesitate to send me it.",
+						"Today I'm working at UpPoints as a Full-Stack Developer.",
+						"For my hobbies I like to play chess, play guitar, cook and build softwares of course.",
+						"I'm always looking for new knowledge.",
 						"Keep looking. Don't settle."],
           typeSpeed: 0,
 					loop: true
